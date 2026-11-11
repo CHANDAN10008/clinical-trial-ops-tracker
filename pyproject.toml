@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "trialops-monitor"
 version = "1.0.0"
 description = "Synthetic clinical trial recruitment operations tracker"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.10,<3.15"
 dependencies = [
   "streamlit>=1.45,<2.0",
   "pandas>=2.2,<3.0",
