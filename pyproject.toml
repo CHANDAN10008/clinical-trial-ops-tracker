@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trialops-monitor"
+version = "1.0.0"
+description = "Synthetic clinical trial recruitment operations tracker"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "streamlit>=1.45,<2.0",
+  "pandas>=2.2,<3.0",
+  "numpy>=1.26,<3.0",
+  "plotly>=5.20,<7.0",
+  "SQLAlchemy>=2.0,<3.0",
+  "psycopg[binary]>=3.2,<4.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,8 @@
+-- Run from the repository root after applying sql/schema.sql and generating data:
+-- python -m clinical_ops.cli demo
+\copy trialops.trials FROM 'data/generated/raw/trials.csv' WITH (FORMAT csv, HEADER true)
+\copy trialops.sites FROM 'data/generated/raw/sites.csv' WITH (FORMAT csv, HEADER true)
+\copy trialops.site_trial_assignments FROM 'data/generated/raw/site_assignments.csv' WITH (FORMAT csv, HEADER true)
+\copy trialops.screening_records FROM 'data/generated/processed/clean_screenings.csv' WITH (FORMAT csv, HEADER true)
+\copy trialops.monthly_enrollment_targets FROM 'data/generated/processed/monthly_targets.csv' WITH (FORMAT csv, HEADER true)
+\copy trialops.data_quality_issues (screening_id, issue_type, details) FROM 'data/generated/processed/quality_issues.csv' WITH (FORMAT csv, HEADER true)
