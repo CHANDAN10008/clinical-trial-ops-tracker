@@ -9,7 +9,7 @@ TrialOps Monitor is a recruiter-friendly portfolio demo for reviewing enrollment
 
 ## Live demo
 
-The public Streamlit demo link will be added here after deployment.
+[Open the public TrialOps Monitor dashboard](https://trialops-enrollment-monitor.streamlit.app/)
 
 ## Run locally (Windows PowerShell)
 
@@ -74,7 +74,7 @@ The synthetic values and thresholds are illustrative. Do not transfer these thre
 
 ## Deployment
 
-The dashboard can be deployed from this public repository on Streamlit Community Cloud. Select `app.py` as the entrypoint and Python 3.11 or 3.12 in the deployment settings. The app needs no database secret for the synthetic public demo.
+The public dashboard is deployed from this repository on Streamlit Community Cloud and uses Python 3.14. The app needs no database secret for the synthetic public demo.
 
 For a local container:
 
@@ -89,4 +89,3 @@ Use a version that matches the work you can explain and the evidence you have:
 
 **TrialOps Monitor — Clinical Trial Recruitment Operations Analytics** · Python, PostgreSQL, SQL, Streamlit  
 Built a simulated multi-site enrollment dashboard for 3 studies and 18 sites, with a screening-to-randomization funnel, monthly target-versus-actual reporting, and transparent site review flags. Implemented ETL checks for duplicate screening IDs, orphan assignments, missing dates, and event chronology; documented repair outcomes, PostgreSQL CTE/window-function reports, and a 12-story prioritized backlog with acceptance criteria. All records are synthetic; no live sponsor data or clinical decisions are represented.
-
